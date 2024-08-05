@@ -13,4 +13,7 @@ pip install requests pytest pytest-html faker pytest-x-dist allure-pytest jsonsc
 Faker is a python library that is used to generate fake data for testing
 
 # to run a test case
-pytest tests/crud/test_create_booking.py alluredir=allure_result -s
+pytest tests/crud/test_create_booking.py --alluredir=allure_result -s
+
+# how to clean the allure-reports
+allure generate -clean
